@@ -43,11 +43,11 @@ def process_gus_image(img_bgr, blue_lower, blue_upper, root_params):
 
 st.set_page_config(page_title="GUS-blue Quantifier", layout="wide")
 
-st.title("🌱 Cuantificación de Tinción GUS-blue")
+st.title("Cuantificación de Tinción GUS-blue")
 st.markdown("Carga tus fotos de raíces de Arabidopsis para calcular automáticamente el porcentaje de tinción azul.")
 
 # --- Barra Lateral de Parámetros ---
-st.sidebar.header("🛠️ Parámetros de Ajuste")
+st.sidebar.header("Parámetros de Ajuste")
 
 st.sidebar.subheader("Rango de Color Azul (HSV)")
 h_range = st.sidebar.slider("H (Hue)", 0, 179, (90, 140))
@@ -86,7 +86,7 @@ if uploaded_files:
             metrics['Archivo'] = uploaded_file.name
             results.append(metrics)
             
-            with st.expander(f"🖼️ Ver Análisis: {uploaded_file.name}"):
+            with st.expander(f"Ver Análisis: {uploaded_file.name}"):
                 col1, col2, col3 = st.columns(3)
                 col1.image(data['original'], caption="Original", use_column_width=True)
                 col2.image(data['root_mask'], caption="Máscara de Raíz", use_column_width=True)
@@ -94,24 +94,24 @@ if uploaded_files:
 
     # --- Resultados Globales ---
     if results:
-        st.divider()
-        st.subheader("📊 Resultados Finales")
+        st.markdown("---")
+        st.subheader("Resultados Finales")
         df = pd.DataFrame(results)
         cols = ['Archivo', 'percentage', 'blue_pixels', 'root_pixels']
         df = df[cols].rename(columns={'percentage': 'Porcentaje Azul (%)', 'blue_pixels': 'Píxeles Azules', 'root_pixels': 'Total Píxeles Raíz'})
         
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df)
         
         # Botón de Descarga
         csv = df.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="📥 Descargar Resultados (CSV)",
+            label="Descargar Resultados (CSV)",
             data=csv,
             file_name="resultados_gus_streamlit.csv",
             mime="text/csv",
         )
 else:
-    st.info("👋 Por favor, sube una imagen en el panel central para comenzar.")
+    st.info("Por favor, sube una imagen en el panel central para comenzar.")
 
 st.sidebar.markdown("---")
 st.sidebar.info("""
