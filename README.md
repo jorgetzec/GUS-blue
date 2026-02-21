@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-brightgreen?style=flat-square&logo=python" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT">
-  <img src="https://img.shields.io/badge/Analysis-GUS--blue-blue?style=flat-square" alt="GUS-blue Analysis">
+  <a href="https://doi.org/10.5281/zenodo.18726152"><img src="https://zenodo.org/badge/1163053683.svg" alt="DOI"></a>
   <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status">
 </p>
 
@@ -135,3 +135,11 @@ Este repositorio está listo para ser conectado a **Streamlit Cloud**:
 1. Sube este código a un repositorio de GitHub.
 2. Conecta el repositorio en [streamlit.io/cloud](https://streamlit.io/cloud).
 3. Selecciona `gus_blue_app.py` como punto de entrada.
+
+---
+
+## Citación
+
+Si utilizas esta herramienta en tu investigación, por favor cítala como:
+
+> jorgetzec. (2026). jorgetzec/GUS-blue: GUS-Blue_v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18726152
