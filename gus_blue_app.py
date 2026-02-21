@@ -88,9 +88,9 @@ if uploaded_files:
             
             with st.expander(f"🖼️ Ver Análisis: {uploaded_file.name}"):
                 col1, col2, col3 = st.columns(3)
-                col1.image(data['original'], caption="Original", use_container_width=True)
-                col2.image(data['root_mask'], caption="Máscara de Raíz", use_container_width=True)
-                col3.image(data['blue_mask'], caption=f"Tinción Detectada: {metrics['percentage']}%", use_container_width=True)
+                col1.image(data['original'], caption="Original", use_column_width=True)
+                col2.image(data['root_mask'], caption="Máscara de Raíz", use_column_width=True)
+                col3.image(data['blue_mask'], caption=f"Tinción Detectada: {metrics['percentage']}%", use_column_width=True)
 
     # --- Resultados Globales ---
     if results:
