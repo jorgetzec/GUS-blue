@@ -4,3 +4,4 @@ pandas
 matplotlib
 streamlit
 Pillow
+altair<5
