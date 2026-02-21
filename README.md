@@ -1,5 +1,16 @@
 # Cuantificación de Píxeles GUS-blue
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jorgetzec/GUS-blue/main/gus_blue_logo.png" width="300">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11+-brightgreen?style=flat-square&logo=python" alt="Python 3.11+">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT">
+  <img src="https://img.shields.io/badge/Analysis-GUS--blue-blue?style=flat-square" alt="GUS-blue Analysis">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status">
+</p>
+
 Este proyecto proporciona herramientas automatizadas para la cuantificación de tinción azul (GUS) en raíces de *Arabidopsis* mediante procesamiento de imágenes con OpenCV.
 
 ## Requisitos y Configuración
@@ -20,6 +31,7 @@ uv add opencv-python numpy matplotlib pandas ipykernel streamlit
 
 ### 1. Aplicación Web (Streamlit)
 Ideal para usuarios que buscan una interfaz visual sin tocar código o para despliegue en la nube.
+Visita https://gus-blue.streamlit.app/ para usar la aplicación.
 
 - **Archivo:** `gus_blue_app.py`
 - **Uso:** 
@@ -55,7 +67,9 @@ python gus-blue_quantification.py -i mis_imagenes -o reporte_final.csv --hsv-low
 | Salida | `-o`, `--output` | Nombre del archivo CSV de resultados | `resultados_gus.csv` |
 | Plots | `--save-plots` | Guarda las comparaciones visuales en disco | `False` |
 | HSV Lower | `--hsv-lower` | Límite inferior H S V para detección de azul | `90 40 40` |
+| HSV Upper | `--hsv-upper` | Límite superior H S V para detección de azul | `140 255 255` |
 | Root S | `--root-s` | Umbral de saturación mínima para la raíz | `20` |
+| Root V | `--root-v` | Brillo máximo para excluir el fondo de la raíz | `240` |
 
 ---
 

@@ -43,6 +43,11 @@ def process_gus_image(img_bgr, blue_lower, blue_upper, root_params):
 
 st.set_page_config(page_title="GUS-blue Quantifier", layout="wide")
 
+# --- Logo Centrado ---
+col1, col2, col3 = st.columns([1, 1, 1])
+with col2:
+    st.image("gus_blue_logo.png", use_column_width=True)
+
 st.title("Cuantificación de Tinción GUS-blue")
 st.markdown("Carga tus fotos de raíces de Arabidopsis para calcular automáticamente el porcentaje de tinción azul.")
 
