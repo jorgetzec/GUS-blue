@@ -33,7 +33,8 @@ Ideal para procesamiento por lotes, automatización y rapidez extrema.
 
 - **Archivo:** `gus-blue_quantification.py`
 - **Comando básico:**
-  ```bash
+
+```bash
 # Procesar todas las imágenes en la carpeta 'plant_photos'
 python gus-blue_quantification.py
 
@@ -42,7 +43,7 @@ python gus-blue_quantification.py
 
 # Especificar entrada, salida y personalizar el rango de azul (HSV)
 python gus-blue_quantification.py -i mis_imagenes -o reporte_final.csv --hsv-lower 95 45 45
-  ```
+```
 
 ---
 
