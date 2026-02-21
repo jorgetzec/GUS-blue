@@ -5,4 +5,3 @@ matplotlib
 streamlit
 Pillow
 altair<5
-imghdr
