@@ -1,6 +1,6 @@
 opencv-python-headless
-numpy
-pandas
+numpy<2.0.0
+pandas<2.2.0
 matplotlib
 streamlit
 Pillow
