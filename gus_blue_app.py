@@ -119,7 +119,7 @@ else:
     st.info("Por favor, sube una imagen en el panel central para comenzar.")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown(f"**DOI:** [![DOI](https://zenodo.org/badge/1163053683.svg)](https://doi.org/10.5281/zenodo.18726152)")
+st.sidebar.markdown(f"**DOI:** [![DOI](https://zenodo.org/badge/1163053683.svg)](https://doi.org/10.5281/zenodo.18726153)")
 
 st.sidebar.info("""
 **Instrucciones:**
@@ -128,5 +128,5 @@ st.sidebar.info("""
 3. El porcentaje se calcula **respecto al área de la raíz**, no de la foto.
 
 **Cómo citar:**
-jorgetzec. (2026). jorgetzec/GUS-blue: GUS-Blue_v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18726152
+Tzec-Interián, J. A. (2026). jorgetzec/GUS-blue: GUS-Blue_v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18726153
 """)

@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-brightgreen?style=flat-square&logo=python" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT">
-  <a href="https://doi.org/10.5281/zenodo.18726152"><img src="https://zenodo.org/badge/1163053683.svg" alt="DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.18726153"><img src="https://zenodo.org/badge/1163053683.svg" alt="DOI"></a>
   <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status">
 </p>
 
@@ -142,4 +142,4 @@ Este repositorio está listo para ser conectado a **Streamlit Cloud**:
 
 Si utilizas esta herramienta en tu investigación, por favor cítala como:
 
-> jorgetzec. (2026). jorgetzec/GUS-blue: GUS-Blue_v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18726152
+> Tzec-Interián, J. A. (2026). jorgetzec/GUS-blue: GUS-Blue_v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18726153
